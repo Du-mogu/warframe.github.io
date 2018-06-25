@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Warframe</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+</head>
+<body>  
+    <!--在下方书写导航条-->
+    <div class="warp">
+        <header class="main-header">
+            <br/><br/><br/>
+            <h1 class="logo"><a href="#">Warframe</a></h1>
+            
+            <center><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 菜单</span></center>
+            
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul class="navlist">
+                <li ><a href="/second.html">视频</a></li><!--ctrl+D复制整行代码-->
+                <li><a href="#">游戏</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">商店</a></li>
+            </ul>  <!--无序列表-->
+            </div>
+        </div>
+        </header>
+          
+        <section>
+            <div class="videos">
+                <video autoplay="autoplay" controls="controls" src="../video/cg.mp4" type="video/mp4";>
+                </video>
+            </div>
+        </section>
+        
+        <section class="banner">
+            <h1>WARFRAME</h1>
+            <br/><br/>
+            <h1>星际战甲</h1>
+        </section>
+        
+        <section>
+        <button class="accordion">TENNO</button>
+        <div class="panel">
+            <p>保藏在低温舱数世纪之久的 Tenno，被唤醒到一轮新的战争中，企图战胜并抵抗 Grineer 帝国统治太阳系的野心。
+
+　　Tenno 是地球上古 Orokin 时代神秘文明遗失战士的后裔。保藏在低温舱数世纪之久的Tenno，被唤醒面对一轮新的战争，他们是 Orokin 创制的 Warframe 唯一的承载者企图战胜并抵抗交战群雄。虽然 Tenno 的记忆已经随着时间的流逝消褪，但他们对枪、剑和 Warframe 外甲的精通并未随之而去。
+
+　　历史的碎片显示纪律和骑士精神是 Tenno 价值的奠基石：如今这依然是真的吗？Tenno 正在进入一个他们不熟悉的世界。 有人认为他们是高贵的战士，加强力量反抗暴政。还有人认为他们是投机取巧的佣兵，利用 Warframe 的强大优势获得财富。无论他们的未来如何，Tenno 永远团结一致面对共同的敌人，对彼此忠心。</p>
+        </div>
+
+        <button class="accordion">GRINEER</button>
+        <div class="panel">
+            <p>Grineer 是一个正在衰退的种族，他们被恐惧和嫉妒驱使成为军事化人类。他们的目标是将Tenno 灭绝。
+
+　　数量庞大的 Grineer 已经从地球向整个太阳系扩张他们丑恶的帝国。一旦 Grineer 重新发现克隆技术，他们就能以绝对的数量控制地球。
+
+　　他们可能达到了权力的高度，但 Grinner 军队正在经历身体上的衰退，他们的机能由于持续的克隆变得越来越落后。这一点促迫使 Grineer 不得不以科技为支柱来弥补基因的衰退。对 Tenno 仇恨和歧视的意识形态继续驱动 Grineer 走向不可避免的瓦解。</p>
+        </div>
+
+        <button class="accordion">CORPUS</button>
+        <div class="panel">
+            <p>Corpus 控制所有的商品交易。隐居的 Corpus 寻求失去的 Orokin 技术来建造他们自己的战斗武器来抵抗 Tenno，如果有必要，也抵抗 Grineer。
+
+　　Corpus 是一个专横的人类原型公司，维护和经营星际航道的交易路径。他们很隐秘，服务他们的机器人代理是更为人知的。Corpus 的社会结构j据说是地球古老商业行会的写照。他们的生产方法混合科技和宗教仪式，部分是因为他们使用的古老 Orokin 材料对他们来说非常神秘的。他们控制经过整个太阳系的商品供应链。
+
+　　Corpus 把 Orokin 产物视为是可以开发并获取利益的资源 - 不惜任何代价。</p>
+        </div>
+        <button class="accordion">INFESTED</button>
+        <div class="panel">
+            <p>Infested是一股由被Sentient病毒感染变异而成的野兽们组成的入侵势力，这些生物是其他派系的成员在被加以扭曲、重新组合后形成的产物。最常见的感染者一般是由Gineer枪兵和Corpus船员所感染变异而成。
+
+　　然而，从J3-Golem的台词："你为什么要摧毁我们？我们是你的血肉。"可以推导出它们也有可能是从一些失败的Tenno模仿实验中产生。在某些任务台词中也能听到"Technocycle病毒"一词。大部分Infested完全没有远程攻击手段。</p>
+        </div>
+        <button class="accordion">OROKIN</button>
+        <div class="panel">
+            <p>Orokin一族是在远古时期最先完全统治太阳系的族群。目前已知的是，在Orokin主宰一切的那个年代，他们的科技杰作远超现世。在一场Orokin和"感知者"的大战中，Orokin创造出了所谓的Technocycle病毒来当作反攻武器。关于大战的最终结果只有一小部分讯息存留下来。
+
+　　虽然Orokin一族已经消逝了, 但他们的科技却保存了下来。包括能把侵入虚空中Orokin之塔的入侵者完全改造, 使他们转而为保卫虚空而战斗的精神控制仪器。他们一般被称为"堕落者"。</p>
+        </div>
+        </section>
+        
+    </div>
+    <footer>胥 涛&copy;2018</footer>
+    
+	<script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,295 @@
+/* ================================= 
+全局设置
+==================================== */
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* ================================= 
+移动优先CSS规则
+==================================== */
+.logo {
+    margin: 20px;  /*外边距*/
+    top: 10px;
+}
+header {
+    text-align: center;  /*文本居中*/
+    background-image: url("../images/lianhua.jpg");
+    background-size: cover;/*图片自适应*/
+    background-position: center center;/*图片纵横居中*/
+
+}
+
+
+a {
+    display: block;
+    color:dimgray;
+}
+.logo a {
+    padding: 1em 0;
+    
+}
+.navlist li a {
+    padding: 0.5em 0;
+}
+.navlist li a:hover {
+    background-color:aliceblue;
+    color:black;
+    transition: 0.3s;
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: darkcyan;
+    color: white;
+}
+.warp {
+    min-height: calc(100vh - 54.5px);
+}
+.videos {
+   width:100%;
+    position:relative;
+    padding-bottom:56.25%; 
+    height: 0;
+    
+}
+.videos video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.banner {
+    background: url("../images/14521641383235.jpg");
+    background-size: cover;/*图片自适应*/
+    background-position: center center;/*图片纵横居中*/
+    text-align: center;
+    padding: 1em 0;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    
+}
+h1, h2 {   
+    margin: 0;
+}
+h2 {
+    padding: 1em;
+}
+.container {
+    /*width: 90%;*/
+    margin: auto;
+    border: 1px solid black;
+}
+/*.col {
+    padding: 1em 1em;
+    background-color: coral;
+    color: cornsilk;
+    
+    border: 1px solid black;
+    
+}
+.col p {
+    line-height: 1.4;
+    
+}
+.col h3 {
+    text-align: center;
+}
+.GRINNEER {
+    background-color: cornflowerblue;
+}
+.CORPUS {
+    background-color: darkseagreen;
+}
+.INFESTED {
+    background-color:crimson;
+}
+.ORINKIN {
+    background-color: dimgray;
+}
+
+
+
+
+.cont {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:burlywood;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}*/
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: azure;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+
+
+
+
+button.accordion {
+    text-align: center;
+    background-color: cadetblue;
+    color: darkgray;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: cornflowerblue;
+    color: blue
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+/*媒体查询*/
+@media (min-width:900px) {
+    .main-header {
+        background: url("../images/lianhua_2.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        /*padding: 0em 4em;*/
+        align-items: center;
+        background-color: black;
+        
+        
+    }
+    .navlist {
+        display: flex;
+        align-items: stretch;
+    }
+    .navlist li a {
+        padding: 1em 1em;
+        border-radius: 3px;
+    }
+    .cg {
+        
+        background-color: black;
+
+    }
+    .videos {
+    padding-bottom:36.25%;  
+    background-color: currentColor;
+    }
+    .banner {
+        height: 500px;
+    }
+    .container {
+        width: 90%;
+        display: flex;
+        padding: 3em 0;
+        border: 0px solid black;
+    }
+    .col {
+        flex-basis: 30%;
+        flex-grow: 3;
+        margin: 0 1em;
+        border-radius: 15px;
+    }
+    .col:hover {
+        box-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+        transform: .3s;
+        cursor: default;
+    }
+}
+.span {
+    right: 35px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    color: aliceblue;
+  }
+}
